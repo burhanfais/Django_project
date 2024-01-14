@@ -1,0 +1,59 @@
+{%block content%}
+{%load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BF</title>
+        <link rel="icon" href="{% static 'bf_logo.png' %}">
+        <style>
+          .box{
+              width: 300px;
+              padding: 50px;
+              position:absolute;
+              left: 50%;
+              top: 60%;
+              transform: translate(-50%, -50%);
+              text-align: center;  
+          }
+          ::placeholder {
+              color: rgb(15, 15, 15);
+              opacity: 1;
+              font-size: large;
+            }
+          .box input[type="text"],
+          .box input[type="email"]{
+              border: 0;
+              background: none;
+              display: block;
+              margin: 20px auto;
+              text-align: center;
+              padding: 14px 10px;
+              width: 220px;
+              background-color: aliceblue;
+          }
+
+        </style>
+    </head>
+    <body bgcolor="black" style="color: white;">
+      <center>
+        
+        <h1>{{road}} REGISTRATION FORM</h1>
+        <form class="box" action="{% url 'data2' %}" method="POST" >
+            <h3>BIKE IS {{bike}} </h3>
+            {%csrf_token%}
+          <input type="text" placeholder=" NAME :  "  name="name">
+          <input type="text" placeholder=" BIKE NAME  :  "  name="bike">
+          <input type="text" placeholder=" AGE : " name="age">
+          <input type="text" placeholder=" D/NO : " name="d_no">
+          <input type="text" placeholder=" STREET NAME: " name="s_name">
+          <input type="text" placeholder=" CITY: " name="city">
+          <input type="text" placeholder=" DISTRICT: "name="district">
+          <input type="text" placeholder=" MOBILE NO : " name="mob1">
+          <input type="text" placeholder=" ALTERNATE MOBILE NO: " name="mob2">
+          <input type="email" placeholder=" EMAIL ID: " name="email">
+          <input type="submit" name="submit">
+      </form>
+      </center>
+    </body>
+</html>
+{%endblock%}

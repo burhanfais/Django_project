@@ -1,0 +1,43 @@
+{%block content%}
+{%load static%}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BF</title>
+        <link rel="icon" href="{% static 'bf_logo.png'%}">
+        <link rel="stylesheet" href="{% static 'front.css' %}">
+    </head>
+    <body bgcolor="black" style="color: white">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="{% url 'Off_road' %}">Off-Road</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'on_road' %}">On-Road</a>
+                    </li>
+                </ul>
+            </nav>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+             <center>
+                <h1>BURHAN FAIS MOTORS</h1>
+             </center>
+            <hr>
+            <img src="{% static 'squard.jpg' %}" height="600px" width="1500px">
+            <center><h1>Off-Road Bikes</h1></center>
+            <h3>Off-road bikes, often referred to as dirt bikes or off-highway motorcycles, are specialized two-wheeled vehicles designed for navigating rugged and unpaved terrains. These rugged machines are equipped with features such as knobby tires, long-travel suspension systems, and lightweight frames to handle the challenges of off-road riding. They are commonly used for various recreational activities, including motocross, trail riding, enduro racing, and adventure touring, offering riders the thrill of conquering diverse landscapes like dirt trails, rocky paths, and even challenging obstacles. Off-road bikes are popular for their agility, versatility, and the adrenaline rush they provide to riders seeking adventure in the great outdoors.</h3>
+            <img src="{% static 'vr46.jpg' %}" height="600px" width="1500px">
+            <center><h1>On-Road Bikes</h1></center>
+            <h3>Road bikes are designed for speed and efficiency on smooth, paved roads, making them ideal for cycling enthusiasts and competitive riders. They feature lightweight frames, narrow tires, and drop handlebars that promote an aerodynamic riding position. Road bikes prioritize minimal rolling resistance and efficient power transfer, allowing cyclists to cover long distances with less effort. These bikes come in various categories, from entry-level models for beginners to high-end racing machines, catering to a wide range of riders who seek the thrill of fast, responsive, and agile cycling experiences on the open road.</h3>
+            <img src="{% static 'ktm.jpg'%}" height="600px" width="1500px">
+        </header>
+    </body>
+</html>
+{%endblock%}

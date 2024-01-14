@@ -1,0 +1,94 @@
+{%block content%}
+{%load static%}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Off-Road</title>
+    <link rel="icon" href="{% static 'bf_logo.png' %}">
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .photo {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .details {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body bgcolor="black" style="color: white;">
+    <div class="container">
+        <div class="photo">
+            <img src="{% static 'himalayan.webp'%}" height="300px" width="400px">
+        </div>
+        <div class="details">
+            <h2>Himalayan</h2>
+            <p>The Royal Enfield Himalayan is powered by a 411 cc air-cooled engine which produces 24.31 PS @ 6500 rpm of power. It has a fuel tank of 15+/- 0.5 L and a claimed mileage of 32.04 kmpl. The Royal Enfield Himalayan starts at Rs 2.16 and goes up to Rs 2.28 Lakh (ex-showroom). It is available in six variants.</p>
+            <button class="button" onclick="window.location.href=`{% url 'himalyan'%}`">Click Me</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="photo">
+            <img src="{% static 'trk-251.webp' %}" height="300px" width="400px">
+        </div>
+        <div class="details">
+            <h2>Beneli TRK 251</h2>
+            <p>Benelli TRK 251 is a adventure bike available in only 1 variant and 3 colours. TRK 251 price starts at Rs. 2,99,000 in India. The Benelli TRK 251 is powered by 249cc BS6 engine which develops a power of 25.47 bhp and a torque of 21.1 Nm. With both front and rear disc brakes, Benelli TRK 251 comes up with anti-locking braking system. This TRK 251 bike weighs 164 kg and has a fuel tank capacity of 18 liters.</p>
+            <button class="button" onclick="window.location.href=`{% url 'trk'%}`">Click Me</button>
+        </div>
+    </form>
+    </div>
+    <div class="container">
+        <div class="photo">
+            <img src="{% static 'KTM-250-Adventure.jpg' %}" height="300px" width="400px">
+        </div>
+        <div class="details">
+            <h2>KTM Adventure</h2>
+            <p>The KTM 390 Adventure is powered by a 373 cc air-cooled engine which produces 43.5 PS @ 9000 rpm of power. It has a fuel tank of 14.5 L and a claimed mileage of 30 kmpl. The KTM 390 Adventure starts at Rs 3.39 and goes up to Rs 3.62 Lakh (ex-showroom). It is available in two variants.</p>
+            <button class="button" onclick="window.location.href=`{% url 'ktm'%}`">Click Me</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="photo">
+            <img src="{% static 'Xpulse.jpg' %}" height="300px" width="400px">
+        </div>
+        <div class="details">
+            <h2>Xpulse</h2>
+            <p>The Hero XPulse 200 4V is powered by a 199.6 cc air-cooled engine which produces 19.17 PS @ 8500 rpm of power. It has a fuel tank of 13 L and a claimed mileage of 51.59 kmpl. The Hero XPulse 200 4V starts at Rs 1.46 and goes up to Rs 1.52 Lakh (ex-showroom). It is available in two variants.</p>
+            <button class="button" onclick="window.location.href=`{% url 'xpluse'%}`">Click Me</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="photo">
+            <img src="{% static 'BMW G310GS.webp' %}" height="300px" width="400px">
+        </div>
+        <div class="details">
+            <h2>BMW G310GS</h2>
+            <p>The BMW G 310 GS is powered by a 313 cc air-cooled engine which produces 34 PS @ 9500 rpm of power. It has a fuel tank of 11 L and a claimed mileage of 29.26 kmpl. The BMW G 310 GS starts at Rs 3.30 Lakh Rs (ex-showroom). It is available in one variants.</p>
+            <button class="button" onclick="window.location.href=`{% url 'bmw'%}`">Click Me</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="photo">
+            <img src="{% static 'adventure.webp' %}" height="300px" width="400px">
+        </div>
+        <div class="details">
+            <h2>Yezdi Adventure</h2>
+            <p>The Yezdi Adventure is powered by a 334 cc air-cooled engine which produces 30.2 PS @ 8000 rpm of power. It has a fuel tank of 15.5 litres and a claimed mileage of 33.07 kmpl. The Yezdi Adventure starts at Rs 2.16 and goes up to Rs 2.20 Lakh (ex-showroom). It is available in three variants.</p>
+            <button class="button" onclick="window.location.href=`{% url 'yezdi'%}`">Click Me</button>
+        </div>
+    </div>
+</body>
+</html>
+{%endblock%}

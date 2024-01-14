@@ -1,0 +1,93 @@
+{%block content%}
+{%load static%}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>On-Road</title>
+    <link rel="icon" href="{% static 'bf_logo.png'%}">
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .photo {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .details {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body bgcolor="black" style="color: white;">
+    <div class="container">
+        <div class="photo">
+            <img src="{% static 'ns 200.webp'%}" height="300px" width="400px">
+        </div>
+        <div class="details">
+            <h2>Ns200</h2>
+            <p>Bajaj Pulsar NS200 2023 STD Price: The price of the Bajaj Pulsar NS200 2023 STD in Delhi is Rs 1.49 Lakh (Ex-showroom).Bajaj Pulsar NS200 2023 STD mileage : It returns a certified mileage of 40.36 kmpl.</p>
+            <button class="button" onclick="window.location.href=`{% url 'register' %}`">Click Me</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="photo">
+            <img src="{% static 'mt 15.webp'%}" height="300px" width="400px">
+        </div>
+        <div class="details">
+            <h2>MT15</h2>
+            <p>The Yamaha MT 15 is powered by a 155 cc air-cooled engine which produces 18.4 PS @ 10000 rpm of power. It has a fuel tank of 10 L and a claimed mileage of 56.87 kmpl. The Yamaha MT 15 starts at Rs 1.67 and goes up to Rs 1.73 Lakh (ex-showroom). It is available in three variants.</p>
+            <button class="button" onclick="window.location.href=`{% url 'mt15'%}`">Click Me</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="photo">
+            <img src="{% static 'Royal-Enfield350.jpg'%}" height="300px" width="400px">
+        </div>
+        <div class="details">
+            <h2>classic 350</h2>
+            <p>The Royal Enfield Classic 350 is powered by a 349.34 cc air-cooled engine which produces 20.21 PS @ 6100 rpm of power. It has a fuel tank of 13 L and a claimed mileage of 41.55 kmpl. The Royal Enfield Classic 350 starts at Rs 1.93 and goes up to Rs 2.25 Lakh (ex-showroom). It is available in six variants.</p>
+            <button class="button" onclick="window.location.href=`{% url 'enfield350'%}`">Click Me</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="photo">
+            <img src="{% static 'apache-200.webp'%}" height="300px" width="400px">
+        </div>
+        <div class="details">
+            <h2>Rtr 200</h2>
+            <p>The TVS Apache RTR 200 4V is powered by a 197.75 cc air-cooled engine which produces 20.82 PS @ 9000 rpm of power. It has a fuel tank of 12 L and a claimed mileage of 37 kmpl. The TVS Apache RTR 200 4V starts at Rs 1.42 and goes up to Rs 1.47 Lakh (ex-showroom). It is available in two variants.</p>
+            <button class="button" onclick="window.location.href=`{% url 'apachertr'%}`">Click Me</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="photo">
+            <img src="{% static 'ktm-duke350.webp'%}" height="300px" width="400px">
+        </div>
+        <div class="details">
+            <h2>Duke</h2>
+            <p>The KTM 390 Duke is powered by a 399 cc air-cooled engine which produces 46 PS @ 8500 rpm of power. It has a fuel tank of 15 L and a . The KTM 390 Duke starts at Rs 3.11 Lakh Rs (ex-showroom). It is available in one variants.</p>
+            <button class="button" onclick="window.location.href=`{% url 'ktm390'%}`">Click Me</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="photo">
+            <img src="{% static 'r15.jpg'%}" height="300px" width="400px">
+        </div>
+        <div class="details">
+            <h2>R15</h2>
+            <p>Yamaha R15 V4 is powered by 155 cc engine. This R15 V4 engine generates a power of 18.4 PS @ 10000 rpm and a torque of 14.2 Nm @ 7500 rpm. The claimed mileage of R15 V4 is 60.56 kmpl. Yamaha R15 V4 gets Disc brakes in the front and rear.</p>
+            <button class="button" onclick="window.location.href=`{% url 'yamahar15'%}`">Click Me</button>
+        </div>
+    </div>
+</body>
+</html>
+{%endblock%}
